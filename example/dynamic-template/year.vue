@@ -4,10 +4,10 @@
 
 <script>
 export default {
-  
+  mounted() {
+    console.log(this.$dynamicContent)
+  }
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
