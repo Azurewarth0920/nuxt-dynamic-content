@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "title": "title of feed 1",
+  "main_image_url": "https://picsum.photos/200/300",
+  "category": "news",
+  "published_at": "2020-07-17T10:00:00.000+09:00",
+  "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in ante ac felis pharetra fermentum lobortis et augue. Quisque placerat congue nisi, sed pulvinar est. Curabitur in neque imperdiet est posuere varius ac nec felis. Aenean bibendum purus nulla, sed commodo eros euismod sed. Nullam rhoncus luctus purus sit amet bibendum. In pharetra eros sit amet enim dapibus tincidunt in ut eros. Nunc id mollis sapien. Vivamus pretium est ipsum, vitae malesuada risus rhoncus vitae. Morbi convallis metus sit amet magna dignissim, vel feugiat dolor posuere. In sollicitudin quis nisi sit amet lobortis.\nClass aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque sed fermentum ante. Suspendisse potenti. Duis a orci nec velit faucibus ultricies at et massa. Vivamus neque erat, malesuada et felis a, varius dignissim nisi. Nunc id dolor aliquet, luctus dui in, dictum justo. Fusce id lacus vel tortor posuere euismod nec ut odio."
+}

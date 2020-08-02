@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "title of feed 1",
+      "main_image_url": "https://picsum.photos/200/300",
+      "category": "news",
+      "published_at": "2020-07-17T10:00:00.000+09:00"
+    },
+    {
+      "id": 2,
+      "title": "title of feed 2",
+      "main_image_url": "https://picsum.photos/200/300",
+      "category": "entertainment",
+      "published_at": "2019-07-17T10:00:00.000+09:00"
+    }
+  ]
+}

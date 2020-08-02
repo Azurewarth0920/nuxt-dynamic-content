@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "title": "title of feed 1",
+  "main_image_url": "https://picsum.photos/200/300",
+  "category": "news",
+  "published_at": "2020-07-17T10:00:00.000+09:00",
+  "content": "Suspendisse quis nisi augue. Curabitur et tincidunt risus. Proin pulvinar mauris sed rutrum interdum. Curabitur rhoncus ac sapien tincidunt faucibus. Etiam efficitur nisi augue, id cursus ipsum venenatis non. Morbi id feugiat libero, eget ultricies libero. Nunc volutpat eu libero sed varius. Pellentesque vitae malesuada nunc.\nVivamus aliquet augue nec tempus gravida. Mauris porta magna sodales dui fringilla cursus. Mauris maximus elit sit amet ultricies pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent venenatis leo augue, et condimentum dolor commodo sit amet. Ut eu leo velit. Ut non leo sit amet ex pellentesque pulvinar. Aliquam sed dictum lacus. Mauris fermentum est ac dui efficitur facilisis. Maecenas laoreet varius est, id condimentum libero hendrerit et. Proin urna sapien, fermentum in accumsan nec, euismod sed nisl. Duis dictum vitae magna sit amet aliquam."
+}
