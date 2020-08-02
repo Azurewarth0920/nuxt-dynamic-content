@@ -1,0 +1,28 @@
+{
+  "name": "nuxt-dynamic-content",
+  "version": "0.0.1",
+  "description": "A Nuxt.js plugin that using content to generate static pages with dynamic routing.",
+  "main": "index.js",
+  "directories": {
+    "example": "nuxt example",
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nuxt": "^2.14.0"
+  },
+  "scripts": {
+    "dev": "nuxt example",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azurewarth0920/nuxt-dynamic-content.git"
+  },
+  "author": "pei.fan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Azurewarth0920/nuxt-dynamic-content/issues"
+  },
+  "homepage": "https://github.com/Azurewarth0920/nuxt-dynamic-content#readme"
+}
