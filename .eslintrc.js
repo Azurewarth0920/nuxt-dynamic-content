@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ['@nuxtjs']
+  extends: ['@nuxtjs', 'plugin:prettier']
 }

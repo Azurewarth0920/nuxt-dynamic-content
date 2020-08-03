@@ -11,10 +11,12 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
     "eslint": "^7.6.0",
+    "eslint-config-prettier": "^6.11.0",
     "nuxt": "^2.14.0"
   },
   "scripts": {
     "dev": "nuxt example",
+    "build": "nuxt generate example",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
