@@ -2,7 +2,7 @@ const { resolve } = require('path')
 const { readFileSync } = require('fs')
 const { Content } = require('../../lib/content-helper')
 
-module.exports = function() {
+module.exports = function () {
   const { data } = JSON.parse(
     readFileSync(resolve(__dirname, '../dynamic-resources/list.json'))
   )
@@ -35,6 +35,7 @@ module.exports = function() {
   // siblings: array
   // locals: array
   // resource: something
+  // unsorted
 
   const categoryList = Array.from(new Set(data.map(item => item.category))).map(
     categoryItem => ({
