@@ -1,0 +1,14 @@
+{
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": ["@nuxtjs", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "parser": "babel-eslint",
+      "sourceType": "module"
+    }
+  }
+}
