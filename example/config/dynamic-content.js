@@ -1,63 +1,38 @@
 const { resolve } = require('path')
 const { readFileSync } = require('fs')
-const { Content } = require('../../lib/content-helper')
+const contentBuilder = require('../../lib/content-helper')
 
-module.exports = function () {
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
+module.exports = async function() {
   const { data } = JSON.parse(
     readFileSync(resolve(__dirname, '../dynamic-resources/list.json'))
   )
 
-  const yearList = Array.from(
-    new Set(data.map(item => new Date(item.published_at).getFullYear()))
-  ).map(yearItem => ({
-    path: `/year/${yearItem}`,
-    componentPath: resolve(__dirname, '../dynamic-template/year.vue'),
-    locals: yearItem
-  }))
+  const yearList = contentBuilder(data, item => new Date(item.published_at), {
+    path: item => `/date/${item}`,
+    component: '~/dynamic-template/year.vue'
+  })
 
-  // TODO: impl strong helper functions
+  const categoryList = contentBuilder(data, item => item.category, {
+    path: category => `/category/${category}`,
+    component: '~/dynamic-template/category.vue'
+  })
 
-  // const yearList = new Content(data)
-  //   .field([
-  //     item => item.date.split("'")[0],
-  //     item => item.date.split("'")[1],
-  //     item => item.date.split("'")[2]
-  //   ])
-  //   .config({
-  //     path: (...item) => `/date/${item[0]}/${item[1]}/${item[2]}`,
-  //     component: '~/dynamic-template/category.vue'
-  //   })
-
-  // will out put
-  // path:string
-  // component:string(fullpath)
-  // chosens: array
-  // siblings: array
-  // locals: array
-  // resource: something
-  // unsorted
-
-  const categoryList = Array.from(new Set(data.map(item => item.category))).map(
-    categoryItem => ({
-      path: `/category/${categoryItem}`,
-      componentPath: resolve(__dirname, '../dynamic-template/category.vue'),
-      locals: categoryItem
-    })
-  )
-
-  const detailList = Array.from(new Set(data.map(item => item.id))).map(
-    detailId => ({
-      path: `/detail/${detailId}`,
-      componentPath: resolve(__dirname, '../dynamic-template/detail.vue'),
-      locals: JSON.parse(
-        readFileSync(
-          resolve(__dirname, `../dynamic-resources/feed_${detailId}.json`)
-        )
+  const detailList = await contentBuilder(data, item => item.id, {
+    path: detailId => `/detail/${detailId}`,
+    component: '~/dynamic-template/detail.vue',
+    resource: async detailId => {
+      await sleep(1000)
+      return readFileSync(
+        resolve(__dirname, `../dynamic-resources/feed_${detailId}.json`)
       )
-    })
-  )
+    }
+  })
 
-  const routesList = [...detailList, ...yearList, ...categoryList]
+  const modules = [detailList, yearList, categoryList]
 
-  return { routesList, globals: data }
+  return { modules, globals: data }
 }
