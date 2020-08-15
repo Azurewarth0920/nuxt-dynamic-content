@@ -1,12 +1,13 @@
 const { resolve } = require('path')
 const { readFileSync } = require('fs')
-const contentBuilder = require('../../lib/content-helper')
+const content = require('../../lib/content-helper')
 
-module.exports = async function() {
+module.exports = function() {
   const { data } = JSON.parse(
     readFileSync(resolve(__dirname, '../dynamic-resources/list.json'))
   )
-  const yearList = contentBuilder(
+
+  const yearList = content(
     data,
     item => new Date(item.published_at).getFullYear(),
     {
@@ -14,11 +15,12 @@ module.exports = async function() {
       component: '~/dynamic-template/year.vue'
     }
   )
-  const categoryList = contentBuilder(data, item => item.category, {
+  const categoryList = content(data, item => item.category, {
     path: category => `/category/${category}`,
     component: '~/dynamic-template/category.vue'
   })
-  const detailList = await contentBuilder(data, item => item.id, {
+
+  const detailList = content(data, item => item.id, {
     path: detailId => `/detail/${detailId}`,
     component: '~/dynamic-template/detail.vue',
     resource: detailId => {

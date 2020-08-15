@@ -1,13 +1,5 @@
 <template>
-  <div>year</div>
+  <div>year: {{ $dynamicContent.current.locals }}</div>
 </template>
-
-<script>
-export default {
-  mounted() {
-    console.log(this.$dynamicContent)
-  }
-}
-</script>
 
 <style scoped></style>
