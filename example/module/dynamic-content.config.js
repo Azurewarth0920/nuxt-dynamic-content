@@ -21,8 +21,8 @@ module.exports = function() {
   })
 
   const detailList = content(data, item => item.id, {
-    path: detailId => `/detail/${detailId}`,
-    component: '~/dynamic-template/detail.vue',
+    path: detailId => `/article/${detailId}`,
+    component: '~/dynamic-template/article.vue',
     resource: detailId => {
       return readFileSync(
         resolve(__dirname, `../dynamic-resources/feed_${detailId}.json`)
