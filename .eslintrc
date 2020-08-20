@@ -3,7 +3,11 @@
     "node": true,
     "es6": true
   },
-  "extends": ["@nuxtjs", "plugin:prettier/recommended"],
+  "extends": ["@nuxtjs",
+    "prettier",
+    "prettier/vue",
+    "plugin:prettier/recommended",
+    "plugin:nuxt/recommended"],
   "parserOptions": {
     "parserOptions": {
       "ecmaVersion": 8,

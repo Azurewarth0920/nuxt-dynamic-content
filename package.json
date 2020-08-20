@@ -16,11 +16,13 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.4.0",
+    "json-server": "^0.16.1",
     "nuxt": "^2.14.0"
   },
   "scripts": {
     "dev": "nuxt example",
     "build": "nuxt generate example",
+    "mock": "node ./test/fixtures/mock-api/index.js",
     "test": "jest"
   },
   "repository": {

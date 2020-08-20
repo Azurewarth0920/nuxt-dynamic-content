@@ -1,0 +1,63 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "title": "Lorem ipsum dolor sit amet",
+      "createdAt": "2019-01-01T00:00:00.000Z",
+      "updatedAt": "2019-03-01T00:00:00.000Z",
+      "mainCategory": "main-type-a",
+      "subCategory": "sub-type-a",
+      "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla a velit"
+    },
+    {
+      "id": 2,
+      "title": "Suspendisse ullamcorper ac leo sed tincidunt",
+      "createdAt": "2020-01-01T00:00:00.000Z",
+      "updatedAt": "2020-03-01T00:00:00.000Z",
+      "mainCategory": "main-type-a",
+      "subCategory": "sub-type-b",
+      "brief": "Suspendisse ullamcorper ac leo sed tincidunt. Donec eget neque eu sem gravida ultricies. Curabitur blandit"
+    },
+    {
+      "id": 3,
+      "title": "Proin hendrerit nisl eu purus laoreet",
+      "createdAt": "2019-09-01T00:00:00.000Z",
+      "updatedAt": "2019-011-01T00:00:00.000Z",
+      "mainCategory": "main-type-b",
+      "subCategory": "sub-type-c",
+      "brief": "Proin hendrerit nisl eu purus laoreet, sed maximus velit lobortis. Praesent bibendum felis et auctor egestas. Donec ut porta est. Suspendisse sed convallis velit."
+    }
+  ],
+  "article": [
+    {
+      "id": 1,
+      "title": "Lorem ipsum dolor sit amet",
+      "createdAt": "2019-01-01T00:00:00.000Z",
+      "updatedAt": "2019-03-01T00:00:00.000Z",
+      "mainCategory": "main-type-a",
+      "subCategory": "sub-type-a",
+      "brief": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla a velit",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fringilla a velit a congue. Aliquam condimentum neque id tempus sollicitudin. Quisque congue nunc sit amet odio facilisis, interdum facilisis mauris dapibus. Aenean a nunc dolor. Vivamus sollicitudin quam at vehicula eleifend. Vivamus tempus tortor et odio accumsan rutrum. Donec nec nunc ultrices odio aliquam eleifend. Cras id massa egestas, sollicitudin dolor eu, dapibus augue. Mauris nec ipsum sapien. Pellentesque porttitor ante quis mollis suscipit. Morbi egestas fermentum risus non ultricies. Sed sit amet mollis nunc, volutpat commodo felis. Sed massa libero, mollis ac blandit ut, posuere vel elit. Mauris volutpat sem vel faucibus luctus. Nam pharetra enim euismod sagittis mattis. Nulla tincidunt congue porta."
+    },
+    {
+      "id": 2,
+      "title": "Suspendisse ullamcorper ac leo sed tincidunt",
+      "createdAt": "2020-01-01T00:00:00.000Z",
+      "updatedAt": "2020-03-01T00:00:00.000Z",
+      "mainCategory": "main-type-a",
+      "subCategory": "sub-type-b",
+      "brief": "Suspendisse ullamcorper ac leo sed tincidunt. Donec eget neque eu sem gravida ultricies. Curabitur blandit",
+      "content": "Suspendisse ullamcorper ac leo sed tincidunt. Donec eget neque eu sem gravida ultricies. Curabitur blandit, dui in tincidunt consequat, dolor metus elementum velit, ut commodo ipsum nibh vitae nunc. Phasellus tempor feugiat commodo. In ornare molestie lorem id gravida. Curabitur pulvinar euismod arcu, quis scelerisque odio consequat in. Duis gravida ultrices scelerisque."
+    },
+    {
+      "id": 3,
+      "title": "Proin hendrerit nisl eu purus laoreet",
+      "createdAt": "2019-09-01T00:00:00.000Z",
+      "updatedAt": "2019-011-01T00:00:00.000Z",
+      "mainCategory": "main-type-b",
+      "subCategory": "sub-type-c",
+      "brief": "Proin hendrerit nisl eu purus laoreet, sed maximus velit lobortis. Praesent bibendum felis et auctor egestas. Donec ut porta est. Suspendisse sed convallis velit.",
+      "content": "Proin hendrerit nisl eu purus laoreet, sed maximus velit lobortis. Praesent bibendum felis et auctor egestas. Donec ut porta est. Suspendisse sed convallis velit. Morbi fringilla ex non dolor porttitor, non pulvinar ipsum euismod. Sed vehicula placerat sagittis. Etiam tempus sapien ut accumsan elementum. Ut purus nibh, tincidunt at tempor elementum, eleifend non nibh. Praesent enim libero, placerat eget pretium at, elementum ut libero. Quisque sodales venenatis sollicitudin. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam sit amet interdum metus, vel condimentum massa. Suspendisse velit ipsum, fringilla eget ornare in, volutpat blandit dui."
+    }     
+  ]
+}
