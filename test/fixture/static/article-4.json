@@ -1,0 +1,11 @@
+{
+  "id": 4,
+  "title": "Nunc sed lorem sit amet tortor convallis sollicitudin ac sit amet enim",
+  "local": true,
+  "createdAt": "2020-09-01T00:00:00.000Z",
+  "updatedAt": "2029-11-01T00:00:00.000Z",
+  "mainCategory": "main-type-b",
+  "subCategory": "sub-type-d",
+  "brief": "Nunc sed lorem sit amet tortor convallis sollicitudin ac sit amet enim. Quisque non ante sagittis, commodo orci sed, tincidunt nunc. Aliquam tempus elit nec scelerisque tincidunt. Nulla feugiat volutpat mi, eget pharetra nunc sollicitudin ac. Ut porta felis a nunc maximus, ac aliquam nisi blandit.",
+  "content": "Nunc sed lorem sit amet tortor convallis sollicitudin ac sit amet enim. Quisque non ante sagittis, commodo orci sed, tincidunt nunc. Aliquam tempus elit nec scelerisque tincidunt. Nulla feugiat volutpat mi, eget pharetra nunc sollicitudin ac. Ut porta felis a nunc maximus, ac aliquam nisi blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In rhoncus erat efficitur, tristique metus sed, facilisis velit. Mauris bibendum tortor et condimentum egestas. Nulla facilisi. Phasellus ornare leo nec libero hendrerit aliquam."
+}

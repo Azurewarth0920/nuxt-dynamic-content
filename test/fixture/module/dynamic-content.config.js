@@ -1,6 +1,6 @@
 const axios = require('axios')
 const { resolve } = require('path')
-const { readFileSync } = require('fs')
+const { readFileSync, fstat } = require('fs')
 const content = require('../../../lib/content-helper')
 
 module.exports = async function() {
@@ -24,14 +24,22 @@ module.exports = async function() {
     }
   )
 
-  const detailList = await content(data, item => item.id, {
-    path: detailId => `/article/${detailId}`,
+  const detailList = await content(data, item => [item.id, item.local], {
+    path: item => `/article/${item[0]}`,
     component: './test/fixture/dynamic-template/article.vue',
-    resource: async id => {
-      const { data } = await axios.get(
-        `http://localhost:3100/api/article/${id}`
-      )
-      return data
+    resource: async item => {
+      if (item[1]) {
+        const { data } = JSON.parse(
+          readFileSync(resolve(__dirname, `../static/article-${item[0]}.json`))
+        )
+
+        return data
+      } else {
+        const { data } = await axios.get(
+          `http://localhost:3100/api/article/${item[0]}`
+        )
+        return data
+      }
     }
   })
 

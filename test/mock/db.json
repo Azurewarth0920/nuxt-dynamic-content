@@ -3,6 +3,7 @@
     {
       "id": 1,
       "title": "Lorem ipsum dolor sit amet",
+      "local": false,
       "createdAt": "2019-01-01T00:00:00.000Z",
       "updatedAt": "2019-03-01T00:00:00.000Z",
       "mainCategory": "main-type-a",
@@ -12,6 +13,7 @@
     {
       "id": 2,
       "title": "Suspendisse ullamcorper ac leo sed tincidunt",
+      "local": false,
       "createdAt": "2020-01-01T00:00:00.000Z",
       "updatedAt": "2020-03-01T00:00:00.000Z",
       "mainCategory": "main-type-a",
@@ -20,12 +22,23 @@
     },
     {
       "id": 3,
+      "local": false,
       "title": "Proin hendrerit nisl eu purus laoreet",
       "createdAt": "2019-09-01T00:00:00.000Z",
-      "updatedAt": "2019-011-01T00:00:00.000Z",
+      "updatedAt": "2019-11-01T00:00:00.000Z",
       "mainCategory": "main-type-b",
       "subCategory": "sub-type-c",
       "brief": "Proin hendrerit nisl eu purus laoreet, sed maximus velit lobortis. Praesent bibendum felis et auctor egestas. Donec ut porta est. Suspendisse sed convallis velit."
+    },
+    {
+      "id": 4,
+      "title": "Nunc sed lorem sit amet tortor convallis sollicitudin ac sit amet enim",
+      "local": true,
+      "createdAt": "2020-09-01T00:00:00.000Z",
+      "updatedAt": "2029-11-01T00:00:00.000Z",
+      "mainCategory": "main-type-b",
+      "subCategory": "sub-type-d",
+      "brief": "Nunc sed lorem sit amet tortor convallis sollicitudin ac sit amet enim. Quisque non ante sagittis, commodo orci sed, tincidunt nunc. Aliquam tempus elit nec scelerisque tincidunt. Nulla feugiat volutpat mi, eget pharetra nunc sollicitudin ac. Ut porta felis a nunc maximus, ac aliquam nisi blandit."
     }
   ],
   "article": [
