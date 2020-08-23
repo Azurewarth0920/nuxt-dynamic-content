@@ -1,9 +1,11 @@
 module.exports = {
   testEnvironment: 'node',
   moduleNameMapper: {
-    '^~/(.*)$': '<rootDir>/lib/$1'
+    '^~/(.*)$': '<rootDir>/test/fixture/$1',
+    '^@/(.*)$': '<rootDir>/lib/$1'
   },
   transform: {
     '^.+\\.js$': 'babel-jest'
-  }
+  },
+  globalSetup: './test/setup.js'
 }

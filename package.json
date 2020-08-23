@@ -7,9 +7,12 @@
     "example": "nuxt example",
     "lib": "lib"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@nuxtjs/module-test-utils": "^1.6.3"
+  },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
+    "axios": "^0.20.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.3.0",
     "eslint": "^7.6.0",

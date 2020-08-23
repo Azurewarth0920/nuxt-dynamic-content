@@ -1,8 +1,7 @@
 <template>
   <div>
-    <h1>category template</h1>
-    <p id="locals-0">category: {{ content.locals[0] }}</p>
-    <p id="locals-1">subCategory: {{ content.locals[1] }}</p>
+    <h1>article template</h1>
+    <p id="locals">article: {{ content.locals }}</p>
     <p id="matches">matched: {{ content.matches }}</p>
     <p id="siblings">siblings: {{ content.siblings }}</p>
   </div>
