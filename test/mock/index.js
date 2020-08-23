@@ -11,15 +11,13 @@ server.use('/api', router)
 
 function setupMock() {
   server = server.listen(mockPort, () => {
-    console.log(`JSON mock server is running on ${mockPort}`)
+    console.log(`\nJSON mock server is running on ${mockPort}`)
   })
-
-  console.log(server)
 }
 
 function shutdownMock() {
   server.close()
-  console.log(`JSON mock server is shut down`)
+  console.log('\nJSON mock server is shut down')
 }
 
 module.exports = {

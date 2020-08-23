@@ -29,6 +29,7 @@ module.exports = function() {
       )
     }
   })
+
   const modules = [detailList, yearList, categoryList]
   return { modules, globals: data }
 }
