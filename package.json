@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Azurewarth0920/nuxt-dynamic-content#readme",
   "devDependencies": {
+    "@vuepress/plugin-google-analytics": "^1.5.4",
     "vuepress": "^1.5.4"
   }
 }
