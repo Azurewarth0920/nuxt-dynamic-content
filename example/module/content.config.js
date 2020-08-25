@@ -1,6 +1,6 @@
 const { resolve } = require('path')
 const { readFileSync } = require('fs')
-const content = require('../../lib/content-helper')
+const content = require('../../lib/module').contentBuilder
 
 module.exports = function() {
   const { data } = JSON.parse(
@@ -24,8 +24,10 @@ module.exports = function() {
     path: detailId => `/article/${detailId}`,
     component: '~/dynamic-template/article.vue',
     resource: detailId => {
-      return readFileSync(
-        resolve(__dirname, `../dynamic-resources/feed_${detailId}.json`)
+      return JSON.parse(
+        readFileSync(
+          resolve(__dirname, `../dynamic-resources/feed_${detailId}.json`)
+        )
       )
     }
   })

@@ -1,5 +1,5 @@
 const dynamicContent = require('../../lib/module')
-const config = require('./module/dynamic-content.config')
+const config = require('./module/content.config')
 
 module.exports = {
   modules: [[dynamicContent, config]],

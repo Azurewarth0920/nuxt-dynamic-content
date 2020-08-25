@@ -1,7 +1,7 @@
 const axios = require('axios')
 const { resolve } = require('path')
 const { readFileSync, fstat } = require('fs')
-const content = require('../../../lib/content-helper')
+const content = require('../../../lib/module').contentBuilder
 
 module.exports = async function() {
   const { data } = await axios.get('http://localhost:3100/api/list/')
