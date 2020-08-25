@@ -24,7 +24,7 @@ const pathBuilder = (localGetters, pattern) =>
 
 // raw content
 const db = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'mock/db.json')))
-const article4 = JSON.parse(
+const localArticle = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, 'fixture/static/article-4.json'))
 )
 
@@ -63,20 +63,37 @@ afterAll(async () => {
 })
 
 describe('variables', () => {
+  // common
   articlePaths.forEach(articleItem => {
-    test('variables injected into article pages', () => testRunner(articleItem))
+    test('variables injected to article pages', () =>
+      commonTestRunner(articleItem))
   })
 
   categoryPaths.forEach(categoryItem => {
-    test('variables in category pages', () => testRunner(categoryItem))
+    test('variables injected to category pages', () =>
+      commonTestRunner(categoryItem))
   })
 
   yearPaths.forEach(yearItem => {
-    test('variables in year pages', () => testRunner(yearItem))
+    test('variables injected to year pages', () => commonTestRunner(yearItem))
   })
+
+  // resource
+  // the first three articles get resource from api
+  articlePaths.slice(0, 3).forEach((articleItem, key) => {
+    test('resource injected from api', () =>
+      resourceTestRunner(
+        articleItem,
+        db.article.find(item => item.id === key + 1)
+      ))
+  })
+
+  // last article gets resource from local json
+  test('resource injected from local json', () =>
+    resourceTestRunner(articlePaths[3], localArticle))
 })
 
-const testRunner = async route => {
+const commonTestRunner = async route => {
   await page.goto(`http://localhost:3000/${route.path}`)
   const { locals, localGetters } = route
 
@@ -113,4 +130,11 @@ const testRunner = async route => {
   expect(
     await page.evaluate(() => window.$nuxt.$dynamicContent.siblings)
   ).toEqual(siblings)
+}
+
+const resourceTestRunner = async (route, resource) => {
+  await page.goto(`http://localhost:3000/${route.path}`)
+  expect(
+    await page.evaluate(() => window.$nuxt.$dynamicContent.resource)
+  ).toEqual(resource)
 }

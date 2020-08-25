@@ -29,7 +29,7 @@ module.exports = async function() {
     component: './test/fixture/dynamic-template/article.vue',
     resource: async item => {
       if (item[1]) {
-        const { data } = JSON.parse(
+        const data = JSON.parse(
           readFileSync(resolve(__dirname, `../static/article-${item[0]}.json`))
         )
 
