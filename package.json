@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-dynamic-content-page",
+  "version": "1.0.0",
+  "description": "docs for nuxt-dynamic-content",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azurewarth0920/nuxt-dynamic-content.git"
+  },
+  "author": "pei.fan",
+  "bugs": {
+    "url": "https://github.com/Azurewarth0920/nuxt-dynamic-content/issues"
+  },
+  "homepage": "https://github.com/Azurewarth0920/nuxt-dynamic-content#readme",
+  "devDependencies": {
+    "vuepress": "^1.5.4"
+  }
+}
