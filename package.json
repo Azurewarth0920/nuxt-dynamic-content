@@ -2,13 +2,10 @@
   "name": "nuxt-dynamic-content",
   "version": "0.0.1",
   "description": "A Nuxt.js plugin that using content to generate static pages with dynamic routing.",
-  "main": "index.js",
+  "main": "lib/module.js",
   "directories": {
     "example": "nuxt example",
     "lib": "lib"
-  },
-  "dependencies": {
-    "@nuxtjs/module-test-utils": "^1.6.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
@@ -21,7 +18,8 @@
     "jest": "^26.4.0",
     "json-server": "^0.16.1",
     "nuxt": "^2.14.0",
-    "puppeteer": "^5.2.1"
+    "puppeteer": "^5.2.1",
+    "@nuxtjs/module-test-utils": "^1.6.3"
   },
   "scripts": {
     "dev": "nuxt example",
