@@ -23,7 +23,7 @@
   },
   "scripts": {
     "dev": "nuxt example",
-    "build:examples": "nuxt generate example",
+    "build:example": "nuxt generate example",
     "mock": "node ./test/fixtures/mock-api/index.js",
     "test": "jest"
   },
