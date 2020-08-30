@@ -1,5 +1,5 @@
 # nuxt-dynamic-content
-A Nuxt.js plugin that using content to generate static pages with dynamic routing.
+A Nuxt.js JAM stack plugin that generating static site with dynamic resource.
 
 ## Installation
 
