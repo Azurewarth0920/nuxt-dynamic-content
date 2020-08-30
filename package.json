@@ -1,6 +1,6 @@
 {
   "name": "nuxt-dynamic-content",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Nuxt.js plugin that using content to generate static pages with dynamic routing.",
   "main": "lib/module.js",
   "directories": {
