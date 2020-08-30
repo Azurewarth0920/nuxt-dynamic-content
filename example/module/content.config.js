@@ -1,33 +1,31 @@
 const { resolve } = require('path')
 const { readFileSync } = require('fs')
-const content = require('../../lib/module').contentBuilder
+const contentBuilder = require('../../lib/module').contentBuilder
 
 module.exports = function() {
   const { data } = JSON.parse(
-    readFileSync(resolve(__dirname, '../dynamic-resources/list.json'))
+    readFileSync(resolve(__dirname, '../resources/list.json'))
   )
 
-  const yearList = content(
+  const yearList = contentBuilder(
     data,
     item => new Date(item.published_at).getFullYear(),
     {
-      path: item => `/year/${item}`,
-      component: '~/dynamic-template/year.vue'
+      path: year => `/year/${year}`,
+      component: '~/templates/year.vue'
     }
   )
-  const categoryList = content(data, item => item.category, {
+  const categoryList = contentBuilder(data, item => item.category, {
     path: category => `/category/${category}`,
-    component: '~/dynamic-template/category.vue'
+    component: '~/templates/category.vue'
   })
 
-  const detailList = content(data, item => item.id, {
+  const detailList = contentBuilder(data, item => item.id, {
     path: detailId => `/article/${detailId}`,
-    component: '~/dynamic-template/article.vue',
+    component: '~/templates/article.vue',
     resource: detailId => {
       return JSON.parse(
-        readFileSync(
-          resolve(__dirname, `../dynamic-resources/feed_${detailId}.json`)
-        )
+        readFileSync(resolve(__dirname, `../resources/feed_${detailId}.json`))
       )
     }
   })
