@@ -2,6 +2,7 @@
   "name": "nuxt-dynamic-content",
   "version": "0.0.3",
   "description": "A Nuxt.js plugin that using content to generate static pages with dynamic routing.",
+  "keywords": ["nuxt", "nuxtjs", "nuxt-module", "nuxt-content", "jamstack", "static-site-generator"],
   "main": "lib/module.js",
   "directories": {
     "example": "nuxt example",
